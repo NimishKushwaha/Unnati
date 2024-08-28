@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Scholarships</title>
+    <style>
+        /* Additional inline styles for bold and larger text */
+        .scholarship-number {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        #scholarship-image {
+            max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+            height: auto;    /* Maintain the image's aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Scholarships</h1>
+
+        <!-- Display the image -->
+        <img id="scholarship-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGriuN_9eM1P2TN84Pu9qIGCGaCbXxp8e3A&usqp=CAU" alt="Scholarship Image">
+
+        <div id="scholarship-container">
+            {% for scholarship in scholarships %}
+                <div class="card">
+                    <p>{{ scholarship | safe }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>

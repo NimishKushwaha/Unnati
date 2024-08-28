@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="buckyball" size="10.000000 10.000000" />
+    <ImageTarget name="atom" size="10.000000 5.359550" />
+    <ImageTarget name="deoxyribonucleic-acid-dna-3d-model-animated-max" size="10.000000 7.500000" />
+    <ImageTarget name="Heart-Mutu" size="10.000000 13.215859" />
+    <ImageTarget name="Crankshaft_Pistons" size="10.000000 7.870000" />
+    <ImageTarget name="truss" size="10.000000 6.388889" />
+    <ImageTarget name="alternators-diesel-generator-500x500" size="10.000000 10.000000" />
+  </Tracking>
+</QCARConfig>

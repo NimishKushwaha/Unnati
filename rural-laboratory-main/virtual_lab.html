@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Instrument+Serif&family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <title>Unnati Laboratory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <video id="bgVideo" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div class="gtranslate_wrapper" id="gtranslate_wrapper"></div>
+  <div class="menu" style="background-color: rgba(255, 255, 255, 0.5);">
+    <a href="../home.html" class="active" style="color: rgb(244, 8, 8);">
+        <i class="fas fa-home fa-lg"></i>
+    </a>  
+    <!-- <a href="../home.html">Home</a> -->
+    <!-- <a href="virtual_lab.html" class="active-menu">HOME</a> -->
+    <a onclick="toggleAbout()" id="header" class="scrolltoabout">ABOUT</a>
+</div> 
+
+
+  <div class="first-block">
+    <h1 class="body-title"><span class="colored-letter">U</span>NNATI <span class="colored-letter">L</span>ABORATORY</h1>
+    <p>
+      STEM projects that can be done with materials readily available in rural areas
+    </p>
+  </div>
+  <div class="second-block img-parent">
+    <a href="./magnifying-glass-using-plastic-bottles.html" class="img-container" id="img1">
+      <p class="img-title">Magnifying glass using plastic bottles</p>
+      <p class="difficulty">Difficulty: Intermediate</p>
+      <div class="background-gradient"></div>
+      <div class="img"></div>
+    </a>
+    <a href="project2.html" class="img-container" id="img2">
+      <p class="img-title">Build a mini-windmill to learn about sustainable energy</p>
+      <p class="difficulty">Difficulty: Advanced</p>
+      <div class="background-gradient"></div>
+      <div class="img"></div>
+    </a>
+    <a href="project3.html" class="img-container" id="img3">
+      <p class="img-title">Water filter by using gravel, sand, and charcoal</p>
+      <p class="difficulty">Difficulty: Advanced</p>
+      <div class="background-gradient"></div>
+      <div class="img"></div>
+    </a>
+    <a href="project4.html" class="img-container" id="img4">
+      <p class="img-title">Make an abacus to learn about the core of mathematics</p>
+      <p class="difficulty">Difficulty: Easy</p>
+      <div class="background-gradient"></div>
+      <div class="img"></div>
+    </a>
+  </div>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
