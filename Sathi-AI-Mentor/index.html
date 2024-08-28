@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Your Q&A Chatbot</title>
+</head>
+<body>
+    <h1>Saathi - Your Q&A Chatbot</h1>
+    <form id="saathiForm">
+        <label for="question">Ask a question:</label><br>
+        <input type="text" id="question" name="question"><br>
+        <label for="image">Choose an image:</label><br>
+        <input type="file" id="image" name="image"><br>
+        <button type="submit">Ask Saathi</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('saathiForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            const response = await fetch('/ask-saathi', {
+                method: 'POST',
+                body: formData
+            });
+
+            const responseData = await response.json();
+
+            document.getElementById('response').textContent = responseData.response;
+        });
+    </script>
+</body>
+</html>
